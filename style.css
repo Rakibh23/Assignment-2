@@ -2,8 +2,8 @@
 *{
     margin: 0;
     padding: 0;
-
 }
+/*------ common-styles------- */
 body{
     font-family: 'Roboto Slab', serif;
 }
@@ -12,12 +12,12 @@ body{
     margin: 0 auto;
     padding: 25px;
 }
-/* navigation-start */
+
+/* ------navigation-start----- */
 .navigation-ber{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
     font-weight: 600;
 }
 .navigation{    
@@ -62,7 +62,6 @@ body{
     height: 414px;
 }
 .all-button{
-    
     color: whitesmoke;
     background-color: #FF6666;
     font-size: 20px;
@@ -125,7 +124,6 @@ collection-styles
     justify-content: flex-end;
     align-items: flex-end;
     color: #FF6666;
-    
 }
 
 /*---------------------------- 
@@ -204,7 +202,25 @@ footer{
     width: 340px;
    
 }
-
+}
+/* -------
+tablet-devices
+------- */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container-3{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .all-collection{
+        grid-template-columns: repeat(2, 1fr); 
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+    }
+   
+    .container-3{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
+    }
 }
 
 
